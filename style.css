@@ -170,8 +170,7 @@ body.activeDarkTheme {
 
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-bg);
-}
-/* ===== =====>> Webkit Scrollbar And Selection Css End<<===== ===== */ 
+} 
 
 /* ===== =====>> Setting Menu Css <<===== ===== */
 .setting {
@@ -345,15 +344,14 @@ body.activeDarkTheme {
 .setting .settingMenu .l-d-Btn input:checked::before {
   transform: translateX(3rem);
 }
-
-/* ===== =====>> Setting Menu Css End<<===== ===== */
+ 
 /* ===== =====>> Header/Nav Css<<===== ===== */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%; 
+  height: 100%;
   background: linear-gradient(90deg,rgba(0,0,0,.8),rgba(0,0,0,.1) 80%); 
   opacity: 0;
   transition: .3s;
@@ -397,7 +395,7 @@ header nav ul li a {
   font-weight: var(--fw-300);
 }  
 
-/* ===== =====>> Menutoggle btn css End<<===== ===== */
+/* ===== =====>> Menutoggle btn Css <<===== ===== */
 .toggleBtn {
   position: fixed;
   top: 3rem;
@@ -410,7 +408,7 @@ header nav ul li a {
   transition: 0.3s;
   cursor: pointer;
   z-index: 3;
-}
+} 
 
 .toggleBtn:before {
   content: "";
@@ -442,8 +440,8 @@ header nav ul li a {
 .toggleBtn.active:after {
   transform: translateY(0) rotate(-40deg);
   background: #fff;
-}  
-/* ===== =====>> Header/Nav Css End<<===== ===== */
+}   
+
 /* ===== =====>> Section Header Css Start<<===== ===== */
 section {
   padding: var(--p-10) 0 var(--p-7);
@@ -453,77 +451,47 @@ section {
   background: var(--bg6);
 }
 
-section .section_header {
-  position: relative;
+section .section_header {   
   text-align: center;
-  margin-bottom: var(--m-5);
+  margin-bottom: var(--m-5);  
 }
 
-section .section_header h1 {
+section .section_header h1 {   
+  font-weight: var(--fw-300);
+  font-size: var(--fs-1-8);
+  letter-spacing: .8rem;
+  margin-bottom: var(--m-3-5);
+  color: var(--cyan);
+} 
+
+section .section_header h2{
   position: relative;
-  margin-bottom: var(--m-1-5);
-  padding-bottom: var(--m-3-5);
 }
 
-section .section_header h1::before {
-  content: "";
+section .section_header h2 .text1{  
+  font-size: var(--fs-5-5);
+  font-weight: var(--fw-600);
+  letter-spacing: .3rem;
+}
+
+section .section_header h2 .text2{ 
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  margin: auto;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 0.3rem solid var(--dark);
-  border-radius: 50%;
-  transition: 0.3s;
-  animation: divider 3s ease-in-out infinite;
-}
-
-@keyframes divider {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-
-  50% {
-    transform: rotate(360deg) scale(1.3);
-  }
-}
-
-section .section_header h1 span {
-  position: relative;
-  font-size: var(--fs-3-2);
-  margin: var(--m-0-3); 
-}
-
-section .section_header h1 .normalText {
-  font-weight: var(--fw-500);
-  letter-spacing: 0.3rem;
-  color: var(--dark);
-}
-
-section .section_header h1 .boldText {
-  font-size: var(--fs-3-5);
-  font-weight: var(--fw-500);
-  color: var(--cyan);
-}
-
-section .section_header p {
-  text-transform: capitalize;
-  width: 60%;
-  margin: auto;
-  font-size: var(--fs-1-6);
-  line-height: 2.5rem;
-  color: var(--rgba08);
-  font-weight: var(--fw-400);
-}
+  right: 0; 
+  font-size: 9.5rem; 
+  font-weight: var(--fw-700); 
+  letter-spacing: .5rem; 
+  -webkit-text-stroke: .1rem var(--cyan); 
+  color: transparent;
+  opacity: .2;
+} 
 
 section .content {
   width: 80%;
   margin: auto;
-}
-/* ===== =====>> Section Css End<<===== ===== */
+} 
+
 /* ===== =====>> Homepage Section <<===== ===== */
 .homepage{
   position: relative;
@@ -573,7 +541,7 @@ section .content {
 }
 
 .homepage .content .box h1 span:nth-child(2){
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 .homepage .content .box h2{
@@ -666,155 +634,11 @@ section .content {
   height: 100%;
   filter: grayscale(100%);
 }
-
-/* ===== =====>> Home Section <<===== ===== */
-/* .home {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  background: url(img/home2.jpg);
-  background-size: cover;
-  box-shadow: var(--bx-shd);
-}
-
-.home .homeContent {
-  text-align: center;
-}
-
-.home .homeContent h2 {
-  font-size: var(--fs-3-2);
-  margin-bottom: var(--m-2-5);
-  color: var(--dark);
-  font-family: "Quattrocento Sans", sans-serif;
-}
-
-.home .homeContent h1 {
-  margin-bottom: var(--m-1-5);
-  color: var(--light);
-}
-
-.home .homeContent h1 span {
-  font-size: var(--fs-7);
-  letter-spacing: 0.1rem;
-  font-family: "Quattrocento Sans", sans-serif;
-}
-
-.home .homeContent h1 .text1 {
-  font-weight: var(--fw-400);
-  color: var(--cyan);
-}
-
-.home .homeContent h1 .text2 {
-  font-weight: var(--fw-600);
-  color: var(--dark);
-}
-
-.home .homeContent .aboutMe{
-  font-size: var(--fs-1-8);
-  font-weight: var(--fw-500);
-  width: 60%;
-  margin: auto;
-  letter-spacing: .1rem;
-  line-height: 2.5rem;
-  margin-bottom: var(--m-2-5);
-}
-
-.home .homeContent ul {
-  margin-bottom: var(--m-3-4);
-}
-
-.home .homeContent ul li {
-  display: inline-block;
-  margin: var(--m-1-8) var(--m-1-5);
-  transition: 0.3s;
-  animation: animeIcons 3s linear infinite;
-  animation-delay: calc(-0.5s * var(--i));
-}
-
-@keyframes animeIcons {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-1rem);
-  }
-}
-
-.home .homeContent ul li a .ri {
-  font-size: var(--fs-2-2);
-  color: var(--dark);
-  padding: var(--p-0-6);
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.home .homeContent ul li:hover a .ri {
-  background: var(--bg4);
-  color: var(--white);
-}
-
-.home .homeContent .downloadCv a {
-  font-size: var(--fs-1-6);
-  font-weight: var(--fw-500);
-  padding: var(--p-1-4) var(--p-2-8);
-  border-radius: 3rem;
-  color: var(--white);
-  transition: 0.5s;
-  background: var(--bg4);
-}
-
-.home .homeContent .downloadCv a:hover {
-  background: var(--bg5); 
-}
-
-.home .homeContent .scrollDownBtn {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 6rem;
-  margin: auto;
-  width: 3rem;
-  height: 5rem;
-  background: var(--cyan);
-  border-radius: 3rem; 
-  animation: zigzag 1s ease-out infinite;
-  cursor: pointer;
-}
-
-@keyframes zigzag {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  80% {
-    transform: translateY(15px);
-  }
-}
-
-.home .homeContent .scrollDownBtn .ri {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1rem;
-  margin: auto;
-  color: var(--white);
-} */
-
-/* ===== =====>> Home Section Css End <<===== ===== */
+ 
 /* ===== =====>> About Section Css Start <<===== ===== */
 .about {
   text-align: center;
-}
+} 
 
 .about .content .profile {
   user-select: none;
@@ -953,16 +777,9 @@ section .content {
   right: 0;
   font-size: var(--fs-1-4);
   color: var(--dark);
-}
-/* ===== =====>> My Skills Css End <<===== ===== */
-/* ===== =====>> Our Services Css <<===== ===== */
+} 
 
-/* .ourServices .content,
-.portfolio .content {
-  width: 80%;
-  margin: auto;
-} */
-
+/* ===== =====>> Our Services Css <<===== ===== */   
 .ourServices .content .serviceCard {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
