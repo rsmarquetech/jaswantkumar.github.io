@@ -1141,6 +1141,7 @@ footer ul li a .ri {
 }
 
 footer .copyright_info p {
+  color: var(--light);
   font-size: var(--fs-1-4);
   margin-top: var(--m-0-8);
 }
