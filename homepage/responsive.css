@@ -1,0 +1,190 @@
+@media screen and (min-width: 880px) and (max-width: 1010px) {
+  header .navbar {
+    padding: var(--p-1-5) var(--p-3);
+  }
+
+  header .navbar .navitems ul li {
+    margin: var(--m-1-5) var(--m-0-6);
+  }
+
+  header .navbar .navitems ul li a {
+    font-size: var(--fs-1-4);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 880px) {
+  header .navbar .navitems ul li {
+    margin: var(--m-1-5) var(--m-0-6);
+  }
+
+  header .navbar .navitems ul li a {
+    font-size: var(--fs-1-2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* ===== =====>> Setting Menu Css<<===== ===== */
+  .setting {
+    top: -15rem;
+  }
+
+  /* header .navbar .navitems {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+
+  header .navbar .navitems.showMenu {
+    transform: translateX(0);
+  }
+
+  header .navbar .navitems ul {
+    position: absolute;
+    top: 10rem;
+  }
+
+  header .navbar .navitems ul li {
+    display: block;
+    margin: var(--m-2-8);
+  }
+
+  header .navbar .navitems ul li a {
+    color: #000;
+    font-size: var(--fs-1-8);
+  } */
+
+  /* ===== =====>> Menutoggle btn css End<<===== ===== */
+  header .navbar .toggleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #21759b;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 1rem;
+    padding: var(--p-2-2);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  header .navbar .toggleBtn.active {
+    border-radius: 50%;
+    z-index: 3;
+  }
+
+  /* @keyframes toggleBtn {
+    0% {
+      border-top: 2px solid #33cc33;
+      border-bottom: 2px solid #33cc33;
+    }
+
+    100% {
+      border: 2px solid #33cc33;
+    }
+  } */
+
+  header .navbar .toggleBtn:before {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 0.2rem;
+    background: #fff;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 0 #fff;
+    transition: 0.3s;
+  }
+
+  header .navbar .toggleBtn.active:before {
+    transform: translateY(0) rotate(40deg);
+    box-shadow: 0 0 0 #fff;
+  }
+
+  header .navbar .toggleBtn:after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 0.2rem;
+    background: #fff;
+    transform: translateY(8px);
+    transition: 0.3s;
+  }
+
+  header .navbar .toggleBtn.active:after {
+    transform: translateY(0) rotate(-40deg);
+  }
+
+  /* header nav .toggleBtn:hover {
+    background: var(--f9-color);
+  } */
+}
+
+@media screen and (max-width: 450px) {
+  header .navbar {
+    padding: var(--p-1-5) var(--p-2-5);
+  }
+
+  header.scrollHeader .navbar {
+    padding: var(--p-0-8) var(--p-2-5);
+  }
+
+  header .navbar .logo h1,
+  header.scrollHeader .navbar .logo h1 {
+    font-size: var(--fs-4-2);
+  }
+
+  header .navbar .toggleBtn {
+    padding: var(--p-2);
+  }
+
+  .home .homeContent h1 span {
+    font-size: var(--fs-6-2);
+  }
+
+  .home .homeContent ul li {
+    margin: var(--m-1-8) var(--m-1-2);
+  }
+
+  section .section_header p {
+    width: 85%;
+  }
+
+  .about .content .about_me {
+    width: 90%;
+  }
+
+  .about .mySkills {
+    width: 90%;
+  }
+
+  .testimonial .content .card .review {
+    width: 100%;
+  }
+
+  .subscribe_newsletter .content {
+    width: 85%;
+  }
+
+  .subscribe_newsletter .content form {
+    width: 100%;
+  }
+
+  section .content {
+    width: 80%;
+    margin: auto;
+  }
+
+  .about .mySkills .skill_container,
+  .ourServices .content .serviceCard,
+  .portfolio .content .portfolioCard,
+  .contact_us .content .contact_form form .input {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

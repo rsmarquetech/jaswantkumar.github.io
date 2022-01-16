@@ -1,0 +1,1176 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@500&family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg1);
+}
+
+.main_container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ===== =====>> Css Variables <<===== ===== */
+:root {
+  /* ===== =====>> Font Colors <<===== ===== */
+  --dark: #000;
+  --light: #fff;
+  --white: #ffffff;
+  --cyan: #21759b;
+  --rgba08: rgba(0, 0, 0, 0.8);
+  --dark-grey: #171717;
+
+  /* ===== =====>> Background Colors <<===== ===== */
+  --bg1: #fff;
+  --bg2: #e4e7eb;
+  --bg3: #323a45;
+  --bg4: #21759b;
+  --bg5: #1d5e7c;
+  --bg6: #f8f9fa;
+  --bg7: #c4c6c9;
+  --bg8: #f1f1f1;
+  --bg9: rgba(0, 0, 0, 0.7);
+  --bg10: #000;
+  --bg11: #ffffff;
+  --scrollbar-bg: #323a45;
+
+  /* ===== =====>> Font Sizes <<===== ===== */
+  --fs-1-2: 1.2rem;
+  --fs-1-4: 1.4rem;
+  --fs-1-5: 1.5rem;
+  --fs-1-6: 1.6rem;
+  --fs-1-8: 1.8rem;
+  --fs-2: 2rem;
+  --fs-2-2: 2.2rem;
+  --fs-2-8: 2.8rem;
+  --fs-3-2: 3.2rem;
+  --fs-3-5: 3.5rem;
+  --fs-4-2: 4.2rem;
+  --fs-5-5: 5.5rem;
+  --fs-6-2: 6.2rem;
+  --fs-7: 7rem;
+  --fs-14: 14rem;
+
+  /* ===== =====>> Margin <<===== ===== */
+  --m-0-3: 0.3rem;
+  --m-0-5: 0.5rem;
+  --m-0-6: 0.6rem;
+  --m-0-8: 0.8rem;
+  --m-1: 1rem;
+  --m-1-2: 1.2rem;
+  --m-1-5: 1.5rem;
+  --m-1-8: 1.8rem;
+  --m-2: 2rem;
+  --m-2-2: 2.2rem;
+  --m-2-5: 2.5rem;
+  --m-2-8: 2.8rem;
+  --m-3: 3rem;
+  --m-3-4: 3.4rem;
+  --m-3-5: 3.5rem;
+  --m-4: 4rem;
+  --m-4-2: 4.2rem;
+  --m-4-5: 4.5rem;
+  --m-5: 5rem;
+  --m-6: 6rem;
+  --m-8: 8rem;
+
+  /* ===== =====>> Padding <<===== ===== */
+  --p-0-4: 0.4rem;
+  --p-0-5: 0.5rem;
+  --p-0-6: 0.6rem;
+  --p-0-8: 0.8rem;
+  --p-1: 1rem;
+  --p-1-2: 1.2rem;
+  --p-1-4: 1.4rem;
+  --p-1-5: 1.5rem;
+  --p-2: 2rem;
+  --p-2-2: 2.2rem;
+  --p-2-5: 2.5rem;
+  --p-2-8: 2.8rem;
+  --p-3: 3rem;
+  --p-3-5: 3.5rem;
+  --p-5: 5rem;
+  --p-6: 6rem;
+  --p-7: 7rem;
+  --p-8: 8rem;
+  --p-10: 10rem;
+  --p-12: 12rem;
+
+  /* ===== =====>> Font Weight <<===== ===== */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* ===== =====>> Box Shadow <<===== ===== */
+  --bx-shd: inset 0 0 0 150rem rgb(255, 255, 255, 0.8);
+}
+
+/* ===== =====>> Css Variables Dark <<===== ===== */
+body.activeDarkTheme {
+  /* ===== =====>> Font Colors <<===== ===== */
+  --dark: #fff;
+  --light: #000;
+  --rgba08: #fff;
+
+  /* ===== =====>> Background Colors <<===== ===== */
+  --bg1: #000;
+  --bg3: #21759b;
+  --bg6: #000;
+  --bg10: #fff;
+  --scrollbar-bg: #fff;
+
+  /* ===== =====>> Box Shadow <<===== ===== */
+  --bx-shd: inset 0 0 0 200rem rgb(0, 0, 0, 0.8);
+}
+
+::selection {
+  background: var(--bg2);
+  color: var(--dark);
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-bg);
+}
+
+/* ===== =====>> Setting Menu Css<<===== ===== */
+.setting {
+  position: fixed;
+  top: 10rem;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: var(--p-0-8);
+  width: 18rem;
+  height: 30rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  z-index: 1;
+  transition: 0.3s;
+  transform: translateX(-100%);
+}
+
+.setting.settingActive {
+  transform: translateX(0);
+}
+
+.setting .settingBtn {
+  position: absolute;
+  top: 2.5rem;
+  right: -3.5rem;
+  cursor: pointer;
+}
+
+.setting .settingBtn .ri {
+  padding: var(--p-0-6);
+  font-size: var(--fs-2-2);
+  background: var(--bg4);
+  color: var(--white);
+  border-radius: 0 0.6rem 0.6rem 0;
+  animation: spinnerIcon 3s infinite linear;
+  -webkit-animation: spinnerIcon 3s infinite linear;
+}
+
+@keyframes spinnerIcon {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+.setting .settingMenu {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.setting .settingMenu h1 {
+  font-size: var(--fs-1-6);
+  font-weight: var(--fw-6 00);
+  margin: var(--m-0-5) 0;
+}
+
+.setting .settingMenu h2 {
+  font-size: var(--fs-1-4);
+  font-weight: var(--fw-500);
+}
+
+.setting .settingMenu .bg {
+  margin-top: var(--m-1-5);
+}
+
+.setting .settingMenu .bg h2,
+.setting .settingMenu .l-d-Btn h2 {
+  margin-bottom: var(--m-1-5);
+  font-weight: var(--fw-600);
+}
+
+/* .setting .settingMenu .bg h2 {
+  margin-bottom: var(--m-0-8);
+} */
+
+/* .setting .settingMenu .bg span {
+  font-size: var(--fs-1-2);
+  padding: var(--p-0-4) var(--p-0-8);
+  background: var(--bg3);
+  color: var(--light);
+  border-radius: 0.6rem;
+  cursor: pointer;
+} */
+
+.setting .settingMenu .l-d-Btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  margin: auto;
+}
+
+.setting .settingMenu .bg .ri,
+.setting .settingMenu .l-d-Btn .ri {
+  font-size: var(--fs-1-8);
+  background: var(--bg4);
+  color: var(--white);
+  padding: var(--p-0-6) var(--p-2-5);
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+/* ===== =====>> Setting Menu Css End<<===== ===== */
+/* ===== =====>> Header/Nav Css<<===== ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--p-2-5) var(--p-6);
+  transition: 0.5s;
+}
+
+header .navbar .logo h1 {
+  font-size: var(--fs-5-5);
+  color: var(--cyan);
+  font-weight: var(--fw-700);
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+header .navbar .navitems ul li {
+  position: relative;
+  display: inline-block;
+  margin: var(--m-1-5);
+}
+
+/* header .navbar .navitems ul .active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1rem;
+  margin: auto;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #ffffff;
+  border-radius: 50%;
+} */
+
+header .navbar .navitems ul li a {
+  font-size: var(--fs-1-6);
+  color: var(--dark);
+  font-weight: var(--fw-500);
+}
+
+/* header .navbar .navitems ul li:hover a {
+  color: var(--cyan);
+} */
+
+header .navbar .toggleBtn {
+  display: none;
+}
+
+/* ===== =====>> Change Header Background on Scroll <<===== ===== */
+header.scrollHeader {
+  background: var(--bg1);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+header.scrollHeader .navbar {
+  padding: var(--p-1) var(--p-6);
+}
+
+header.scrollHeader .navbar .logo h1 {
+  color: var(--cyan);
+}
+
+header.scrollHeader .navbar .navitems ul .active::before {
+  background: var(--bg4);
+}
+
+header.scrollHeader .navbar .navitems ul li a {
+  color: var(--dark);
+}
+
+/* ===== =====>> Header/Nav Css End<<===== ===== */
+/* ===== =====>> Section Header Css Start<<===== ===== */
+section {
+  padding: var(--p-10) 0 var(--p-7);
+}
+
+.section:nth-child(odd) {
+  background: var(--bg6);
+}
+
+section .section_header {
+  position: relative;
+  text-align: center;
+  margin-bottom: var(--m-5);
+}
+
+section .section_header h1 {
+  position: relative;
+  margin-bottom: var(--m-1-5);
+  padding-bottom: var(--m-3-5);
+}
+
+section .section_header h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.3rem solid var(--dark);
+  border-radius: 50%;
+  transition: 0.3s;
+  animation: divider 3s ease-in-out infinite;
+}
+
+@keyframes divider {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(360deg) scale(1.3);
+  }
+}
+
+section .section_header h1 span {
+  position: relative;
+  font-size: var(--fs-3-2);
+  margin: var(--m-0-3);
+  /* font-size: 7.2rem;
+  font-weight: var(--fw-700);
+  letter-spacing: 0.4rem;
+  text-shadow: 0 8px rgb(0 0 0 / 2%);
+  font-family: "Roboto Condensed", sans-serif; */
+}
+
+section .section_header h1 .normalText {
+  font-weight: var(--fw-500);
+  letter-spacing: 0.3rem;
+  color: var(--dark);
+}
+
+section .section_header h1 .boldText {
+  font-size: var(--fs-3-5);
+  font-weight: var(--fw-500);
+  color: var(--cyan);
+}
+
+section .section_header p {
+  text-transform: capitalize;
+  width: 60%;
+  margin: auto;
+  font-size: var(--fs-1-5);
+  line-height: 2.5rem;
+  color: var(--rgba08);
+  font-weight: var(--fw-500);
+}
+
+section .content {
+  width: 80%;
+  margin: auto;
+}
+/* ===== =====>> Section Css End<<===== ===== */
+
+.home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url(img/home2.jpg);
+  background-size: cover;
+  object-position: center;
+  box-shadow: var(--bx-shd);
+}
+
+.home .homeContent {
+  text-align: center;
+}
+
+.home .homeContent h2 {
+  font-size: var(--fs-3-2);
+  margin-bottom: var(--m-2-5);
+  color: var(--dark);
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.home .homeContent h1 {
+  margin-bottom: var(--m-1-5);
+  color: var(--light);
+}
+
+.home .homeContent h1 span {
+  font-size: var(--fs-7);
+  letter-spacing: 0.1rem;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.home .homeContent h1 .text1 {
+  font-weight: var(--fw-400);
+  color: var(--cyan);
+}
+
+.home .homeContent h1 .text2 {
+  font-weight: var(--fw-600);
+  color: var(--dark);
+}
+
+.home .homeContent ul {
+  margin-bottom: var(--m-3-4);
+}
+
+.home .homeContent ul li {
+  display: inline-block;
+  margin: var(--m-1-8) var(--m-1-5);
+  transition: 0.3s;
+  animation: animeIcons 3s linear infinite;
+  animation-delay: calc(-0.5s * var(--i));
+}
+
+@keyframes animeIcons {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
+.home .homeContent ul li a .ri {
+  font-size: var(--fs-2-2);
+  color: var(--dark);
+  padding: var(--p-0-6);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.home .homeContent ul li:hover a .ri {
+  background: var(--bg4);
+  color: var(--white);
+}
+
+.home .homeContent .downloadCv a {
+  font-size: var(--fs-1-6);
+  font-weight: var(--fw-500);
+  padding: var(--p-1-4) var(--p-2-8);
+  border-radius: 3rem;
+  color: var(--white);
+  transition: 0.5s;
+  background: var(--bg4);
+}
+
+.home .homeContent .downloadCv a:hover {
+  background: var(--bg5);
+  /* color: var(--dark); */
+}
+
+.home .homeContent .scrollDownBtn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6rem;
+  margin: auto;
+  width: 3rem;
+  height: 5rem;
+  background: var(--cyan);
+  border-radius: 3rem;
+  /* border: 2px solid var(--light); */
+  animation: zigzag 1s ease-out infinite;
+  cursor: pointer;
+}
+
+@keyframes zigzag {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  80% {
+    transform: translateY(15px);
+  }
+}
+
+.home .homeContent .scrollDownBtn .ri {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  margin: auto;
+  color: var(--white);
+}
+
+/* ===== =====>> Home Section Css End <<===== ===== */
+/* ===== =====>> About Section Css Start <<===== ===== */
+.about {
+  text-align: center;
+}
+
+.about .content .profile {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.about .content .profile img {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  margin-bottom: var(--m-3);
+  background: #fff;
+  padding: var(--p-0-8);
+  transform: rotate(-7deg);
+}
+
+.about .content h1 span {
+  font-size: var(--fs-2-8);
+  margin: var(--m-0-5);
+  color: var(--dark);
+}
+
+.about .content h1 .greet {
+  font-weight: var(--fw-500);
+}
+
+.about .content h1 .nameText {
+  font-weight: var(--fw-500);
+}
+
+.about .content .sign img {
+  width: 15rem;
+  height: auto;
+  margin: var(--m-2-5) 0;
+}
+
+.about .content .profession li {
+  display: inline-block;
+  font-size: var(--fs-1-6);
+  font-weight: var(--fw-500);
+  margin: 0 var(--m-1-8);
+  color: var(--dark);
+}
+
+.about .content .about_me {
+  width: 63%;
+  margin: auto;
+  margin-top: var(--m-2-5);
+  font-weight: var(--fw-500);
+  line-height: 2rem;
+  color: var(--dark);
+}
+
+/* ===== =====>> My Skills Css <<===== ===== */
+.about .mySkills {
+  padding: var(--p-7) 0;
+  width: 70%;
+  margin: auto;
+}
+
+.about .mySkills .skill_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3.5rem;
+  row-gap: 7rem;
+}
+
+.about .mySkills .skill_container .skill {
+  position: relative;
+}
+
+.about .mySkills .skill_container .skill:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3.5rem;
+  width: 100%;
+  height: 0.3rem;
+  background: var(--bg2);
+}
+
+.about .mySkills .skill_container .skill::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3.5rem;
+  height: 0.3rem;
+  background: var(--bg3);
+}
+
+.about .mySkills .skill_container .skill:nth-child(1):after {
+  width: 90%;
+}
+
+.about .mySkills .skill_container .skill:nth-child(2):after {
+  width: 95%;
+}
+
+.about .mySkills .skill_container .skill:nth-child(3):after {
+  width: 87%;
+}
+
+.about .mySkills .skill_container .skill:nth-child(4):after {
+  width: 75%;
+}
+
+.about .mySkills .skill_container .skill:nth-child(5):after {
+  width: 69%;
+}
+
+.about .mySkills .skill_container .skill:nth-child(6):after {
+  width: 59%;
+}
+
+.about .mySkills .skill_container .skill:nth-child(7):after {
+  width: 55%;
+}
+
+.about .mySkills .skill_container .skill:nth-child(8):after {
+  width: 68%;
+}
+
+.about .mySkills .skill_container .skill h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--fs-1-4);
+  font-weight: var(--fw-600);
+  color: var(--dark);
+}
+
+.about .mySkills .skill_container .skill p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: var(--fs-1-4);
+  color: var(--dark);
+}
+/* ===== =====>> My Skills Css End <<===== ===== */
+/* ===== =====>> Our Services Css <<===== ===== */
+
+/* .ourServices .content,
+.portfolio .content {
+  width: 80%;
+  margin: auto;
+} */
+
+.ourServices .content .serviceCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(22rem, max-content);
+  gap: 3.5rem;
+}
+
+.ourServices .content .serviceCard .card {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  background: var(--bg11);
+  padding: var(--p-3-5) var(--p-2-5);
+  transition: 0.5s;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.ourServices .content .serviceCard .card:hover {
+  background: var(--bg4) !important;
+}
+
+.ourServices .content .serviceCard .card:hover .ri,
+.ourServices .content .serviceCard .card:hover h1,
+.ourServices .content .serviceCard .card:hover p {
+  color: #ffffff;
+}
+
+.ourServices .content .serviceCard .card .ri {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: var(--fs-14);
+  color: var(--cyan);
+  opacity: 0.1;
+}
+
+.ourServices .content .serviceCard .card h1 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
+  line-height: 1.5;
+  margin-bottom: var(--m-1-5);
+}
+
+.ourServices .content .serviceCard .card p {
+  font-size: var(--fs-1-6);
+  color: var(--dark-grey);
+  line-height: 1.5;
+}
+/* ===== =====>> Our Services Css End <<===== ===== */
+/* ===== =====>> Portfolio Css <<===== ===== */
+.portfolio .content .tabs {
+  text-align: center;
+  margin-bottom: var(--m-5);
+}
+
+.portfolio .content .tabs ul li {
+  display: inline-block;
+  margin: var(--m-2-5) 0;
+  padding: var(--p-0-8) var(--p-2-5);
+  font-size: var(--fs-1-4);
+  color: var(--dark);
+  font-weight: var(--fw-600);
+  cursor: pointer;
+  user-select: none;
+}
+
+.portfolio .content .tabs ul li.activeTab {
+  color: var(--white);
+  background: var(--bg4);
+  border-radius: 0.6rem;
+}
+
+.portfolio .content .portfolioCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(30rem, max-content);
+  gap: 3.5rem;
+}
+
+.portfolio .content .portfolioCard .card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.portfolio .content .portfolioCard .card.hide {
+  display: none;
+}
+
+.portfolio .content .portfolioCard .card .portfolio_content {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .content .portfolioCard .card .portfolio_content img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .content .portfolioCard .card .portfolio_content .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  background: var(--bg11);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portfolio .content .portfolioCard .card:hover .portfolio_content .overlay {
+  width: 80%;
+  height: 80%;
+  opacity: 1;
+}
+
+.portfolio .content .portfolioCard .card .portfolio_content .overlay h1 {
+  font-size: var(--fs-1-8);
+  font-weight: var(--fw-600);
+  line-height: 0.8;
+}
+
+.portfolio .content .portfolioCard .card .portfolio_content .overlay p {
+  position: relative;
+  font-size: var(--fs-1-4);
+  color: var(--dark-grey);
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+  margin-top: var(--m-0-6);
+  margin-bottom: var(--m-2-5);
+  padding-bottom: var(--p-1-2);
+}
+
+.portfolio .content .portfolioCard .card .portfolio_content .overlay p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70%;
+  height: 0.1rem;
+  background: var(--bg7);
+}
+
+.portfolio
+  .content
+  .portfolioCard
+  .card
+  .portfolio_content
+  .overlay
+  .icon
+  ul
+  li {
+  display: inline;
+}
+
+.portfolio
+  .content
+  .portfolioCard
+  .card
+  .portfolio_content
+  .overlay
+  .icon
+  ul
+  li
+  a {
+  color: var(--light);
+}
+
+.portfolio
+  .content
+  .portfolioCard
+  .card
+  .portfolio_content
+  .overlay
+  .icon
+  ul
+  li
+  a
+  .ri {
+  font-size: var(--fs-2-2);
+  margin: var(--m-0-5);
+  padding: var(--p-0-8);
+  border-radius: 50%;
+  background: var(--bg4);
+  color: var(--white);
+}
+/* ===== =====>> Portfolio Css End <<===== ===== */
+/* ===== =====>> Testimonial Css <<===== ===== */
+.testimonial .content {
+  text-align: center;
+  /* background: var(--bg1);
+  padding: 5rem 0;
+  border-radius: 50%; */
+}
+
+.testimonial .content .swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: var(--p-5);
+}
+
+.testimonial .content .swiper .swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: var(--bg10);
+}
+
+.testimonial
+  .content
+  .swiper
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background: var(--bg4);
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: 0.5s;
+}
+
+.testimonial .content .card .icon {
+  padding-bottom: var(--p-2-5);
+}
+
+.testimonial .content .card .icon img {
+  width: 6.4rem;
+  color: var(--cyan);
+}
+
+.testimonial .content .card .client_profile img {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #cacaca;
+  padding: var(--p-0-5);
+  border-radius: 50%;
+  margin-bottom: var(--m-2-5);
+}
+
+.testimonial .content .card .review {
+  font-size: var(--fs-1-8);
+  font-weight: var(--fw-400);
+  color: var(--dark);
+  line-height: 2.8rem;
+  font-style: italic;
+  width: 70%;
+  margin: auto;
+  margin-bottom: var(--m-2-5);
+}
+
+.testimonial .content .card .testimonial_name,
+.testimonial .content .card .testimonial_name span {
+  font-size: var(--fs-1-6);
+  font-weight: var(--fw-500);
+  color: var(--dark);
+}
+/* ===== =====>> Testimonial Css End <<===== ===== */
+/* ===== =====>> Subscribe Newsletter <<===== ===== */
+.subscribe_newsletter .content {
+  text-align: center;
+}
+
+.subscribe_newsletter .content form {
+  width: 35%;
+  margin: auto;
+}
+
+.subscribe_newsletter .content form .email_field {
+  display: flex;
+  background: var(--bg8);
+  border-radius: 3rem;
+  padding: var(--p-0-4);
+}
+
+.subscribe_newsletter .content form .email_field input {
+  width: 100%;
+  padding: var(--p-1-2);
+  padding-left: var(--p-2);
+  padding-right: 0;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.subscribe_newsletter .content form .email_field input::placeholder {
+  font-size: var(--fs-1-6);
+}
+
+.subscribe_newsletter .content form .email_field button {
+  font-size: var(--fs-1-4);
+  font-weight: var(--fw-400);
+  padding: var(--p-1-2) var(--p-2-5);
+  background: var(--bg4);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid #21759b;
+}
+
+.subscribe_newsletter .content form .email_field button:hover {
+  background: var(--bg1);
+  border-color: var(--dark);
+  color: var(--dark);
+}
+/* ===== =====>> Subscribe Newsletter End <<===== ===== */
+/* ===== =====>> Contact Us Css <<===== ===== */
+/* .contact_us .content {
+  width: 80%;
+  margin: auto;
+} */
+
+.contact_us .content .contact_info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(20rem, max-content);
+}
+
+.contact_us .content .contact_info .box {
+  text-align: center;
+}
+
+.contact_us .content .contact_info .box .ri {
+  font-size: var(--fs-5-5);
+  color: var(--cyan);
+}
+
+.contact_us .content .contact_info .box h1 {
+  font-size: var(--fs-1-8);
+  margin: var(--m-0-8) 0;
+  font-weight: var(--fw-500);
+  color: var(--dark);
+}
+
+.contact_us .content .contact_info .box p {
+  font-size: var(--fs-1-4);
+  color: var(--dark);
+}
+
+.contact_us .content .contact_form form .input {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1.8rem;
+}
+
+@media screen and (max-width: 1272px) {
+  .contact_us .content .contact_form form .input {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+.contact_us .content .contact_form form .input .input_field input {
+  width: 100%;
+  padding: var(--p-1-2);
+  outline: none;
+  border: none;
+  border-radius: 1rem 0 1rem 0;
+  /* box-shadow: 0 6px 10px 2px #dcdcdc; */
+}
+
+.contact_us .content .contact_form form .input .input_field input:focus {
+  outline: 2px solid #21759b;
+}
+
+.contact_us .content .contact_form form .input .msg input {
+  padding-bottom: var(--p-8);
+  width: 100%;
+}
+
+.contact_us .content .contact_form form .contact_SubmitBtn button {
+  font-size: var(--fs-1-6);
+  padding: var(--p-1-2) var(--p-3);
+  border: none;
+  outline: none;
+  border-radius: 0 1.5rem 0 1.5rem;
+  color: #ffffff !important;
+  transition: all 0.5s ease;
+  background: var(--bg4);
+  margin-top: var(--m-2-5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact_us .content .contact_form form .contact_SubmitBtn button:hover {
+  background: var(--bg5);
+}
+/* ===== =====>> Contact Us Css End <<===== ===== */
+/* ===== =====>> Footer Css <<===== ===== */
+footer {
+  padding: var(--p-12) var(--p-2-5);
+  text-align: center;
+  background: var(--bg10);
+}
+
+footer ul li {
+  display: inline-block;
+  margin: var(--m-1-8);
+}
+
+footer ul li a .ri {
+  font-size: var(--fs-2-2);
+  color: var(--light);
+}
+
+footer .copyright_info p {
+  font-size: var(--fs-1-4);
+  margin-top: var(--m-0-8);
+}
+
+footer .copyright_info p a {
+  font-size: var(--fs-1-8);
+  color: var(--cyan);
+  margin-left: var(--m-0-5);
+  font-weight: var(--fw-500);
+}
+/* ===== =====>> Contact Us Css End <<===== ===== */
+/* ===== =====>> Page Scroll-Up Btn Css <<===== ===== */
+.scroll_up {
+  position: fixed;
+  bottom: 2.6rem;
+  right: 2rem;
+  display: none;
+  transition: 0.5s;
+}
+
+.scroll_up .ri {
+  font-size: var(--fs-2-8);
+  background: var(--bg4);
+  color: var(--white);
+  padding: var(--p-0-6);
+  border-radius: 0.6rem;
+}
+
+.scroll_up.show-scroll {
+  display: inherit;
+  transition: 0.5s;
+}
+/* ===== =====>> Page Scroll-Up Btn Css End <<===== ===== */

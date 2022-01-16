@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- ====== ======>> Custom Css <<====== ====== -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ====== ======>> Custom Responsive Css <<====== ====== -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- ====== ======>> Remixicon Font Icons Cdn <<====== ====== -->
+    <link rel="stylesheet" href="fonts/remixicon.css">
+    <!-- ====== ======>> Swiper Js Cdn <<====== ====== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- ====== ======>> Scroll Revel Animation <<====== ====== -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="main_container">
+        <!-- ====== ======>> Container Background Fixed <<====== ====== -->
+        <div class="bg_fixed" id="fixedBg">
+
+        </div>
+
+        <!-- ====== ======>> Setting Menu <<====== ====== -->
+        <div class="setting" id="setting">
+            <div class="settingBtn" id="settinBtn">
+                <i class="ri-settings-2-fill ri"></i>
+            </div>
+
+            <div class="settingMenu">
+                <h1 class="tittle">Theme Skin</h1>
+
+                <div class="bg">
+                    <h2>Background</h2>
+                    <span class="light" id="parallaxBtn">
+                        <i class="ri-shut-down-line ri"></i>
+                    </span>
+                </div>
+
+                <div class="l-d-Btn">
+                    <h2>Light/Dark Version</h2>
+                    <div>
+                        <span class="light" id="lightTheme"><i class="ri-sun-fill ri"></i></span>
+                        <input class="light-dark-toggle" id="changeTheme" type="checkbox">
+                        <span class="dark" id="darkTheme"><i class="ri-moon-fill ri"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ====== ======>> Setting Menu ENd <<====== ====== -->
+
+        <!-- ====== ======>> Sidebar Toggle Btn <<====== ====== -->
+        <div class="toggleBtn" id="toggle">
+            <!-- This is Toggle Btn -->
+        </div>
+
+        <!-- ====== ======>> Header <<====== ====== -->
+        <header id="header">
+            <!-- ====== ======>> Navbar <<====== ====== -->
+            <nav class="navbar">
+                <ul class="navitems">
+                    <li class="navItem activeLink"><a href="#home">Home</a></li>
+                    <li class="navItem"><a href="#service">Service</a></li>
+                    <li class="navItem"><a href="#work">Work</a></li>
+                    <li class="navItem"><a href="#client">Client</a></li>
+                    <li class="navItem"><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="homepage" id="home">
+                <div class="content">
+                    <div class="box">
+                        <h1 class="name">
+                            <span>Jaswant </span>
+                            <span>Kumar</span>
+                        </h1>
+
+                        <h2 class="skills">Web Designer & Developer</h2>
+
+                        <ul class="button">
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Contact Me</a></li>
+                        </ul>
+
+                        <a href="#about">
+                            <span class="scrollDownBtn">
+                                <i class="ri-arrow-down-s-line ri"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- <div class="profile">
+                    <img src="" alt="profile">
+                </div> -->
+            </section>
+
+            <section class="about section" id="about">
+                <div class="section_header">
+                    <h1 class="tittle">
+                        <span class="normalText">About</span>
+                        <span class="boldText">Me</span>
+                    </h1>
+                    <p class="subTittle">My mission is to Design and Develop your unique idea into website or
+                        application for best brand of your buisness.
+                    </p>
+                </div>
+
+                <div class="content">
+                    <figure class="profile" data-aos="zoom-in">
+                        <img src="img/profile.png" alt="profile">
+                    </figure>
+
+                    <h1 class="name" data-aos="fade-up">
+                        <span class="greet">Hii!</span>
+                        <span class="nameText">I'M Jaswant Kumar</span>
+                    </h1>
+
+                    <figure class="sign" data-aos="fade-up">
+                        <img src="img/sign2.png" alt="sign">
+                    </figure>
+
+                    <ul class="profession" data-aos="fade-up">
+                        <li>Developer</li>
+                        <li>UI/UX Designer</li>
+                        <li>Freelancer</li>
+                    </ul>
+
+                    <P class="about_me" data-aos="fade-up" data-aos-delay="200">
+                        Hello! I’m Jaswant Kumar. Web designer from India, Jodhpur, Rajasthan. I have rich experience
+                        in web design and web development, also I am good at wordpress, I love to talk with you about
+                        our
+                        unique. I
+                        help you build brand for your business
+                    </P>
+                </div>
+
+                <div class="mySkills">
+                    <div class="skill_container">
+                        <div class="skill development" data-aos="fade-right">
+                            <h1>Development</h1>
+                            <p>90%</p>
+                        </div>
+
+                        <div class="skill html" data-aos="fade-left">
+                            <h1>Html</h1>
+                            <p>95%</p>
+                        </div>
+
+                        <div class="skill css" data-aos="fade-right">
+                            <h1>Css</h1>
+                            <p>87%</p>
+                        </div>
+
+                        <div class="skill javascript" data-aos="fade-left">
+                            <h1>Javascript</h1>
+                            <p>75%</p>
+                        </div>
+
+                        <div class="skill wordpress" data-aos="fade-right">
+                            <h1>WordPress</h1>
+                            <p>69%</p>
+                        </div>
+
+                        <div class="skill reactJs" data-aos="fade-left">
+                            <h1>React Js</h1>
+                            <p>59%</p>
+                        </div>
+
+                        <div class="skill angularJs" data-aos="fade-right">
+                            <h1>Angular Js</h1>
+                            <p>55%</p>
+                        </div>
+
+                        <div class="skill jquery" data-aos="fade-left">
+                            <h1>Jquery</h1>
+                            <p>68%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ourServices section" id="service">
+                <div class="section_header">
+                    <h1 class="tittle">
+                        <span class="normalText">Our</span>
+                        <span class="boldText">Services</span>
+                    </h1>
+                    <p class="subTittle">Design, build & maintain websites that keep pace with our digital world and
+                        build mobile first solutions for ios, Android taking your idea to polished product.</p>
+                </div>
+
+                <div class="content">
+                    <div class="serviceCard">
+                        <div class="card" data-aos="flip-left">
+                            <i class="ri-computer-line ri"></i>
+                            <h1 class="tittle">Web Design</h1>
+                            <p class="text">Design, build & maintain websites that keep pace with our digital world.</p>
+                        </div>
+
+                        <div class="card" data-aos="flip-left">
+                            <i class="ri-reactjs-line ri"></i>
+                            <h1 class="tittle">Web Development</h1>
+                            <p class="text">Design, build & maintain websites that keep pace with our digital world.</p>
+                        </div>
+
+                        <div class="card" data-aos="flip-left">
+                            <i class="ri-android-line ri"></i>
+                            <h1 class="tittle">App development</h1>
+                            <p class="text">Design, build & maintain websites that keep pace with our digital world.</p>
+                        </div>
+
+                        <div class="card" data-aos="flip-left">
+                            <i class="ri-palette-fill ri"></i>
+                            <h1 class="tittle">Graphic Design</h1>
+                            <p class="text">Design, build & maintain websites that keep pace with our digital world.</p>
+                        </div>
+
+                        <div class="card" data-aos="flip-left">
+                            <i class="ri-computer-line ri"></i>
+                            <h1 class="tittle">Web Design</h1>
+                            <p class="text">Design, build & maintain websites that keep pace with our digital world.</p>
+                        </div>
+
+                        <div class="card" data-aos="flip-left">
+                            <i class="ri-computer-line ri"></i>
+                            <h1 class="tittle">Web Design</h1>
+                            <p class="text">Design, build & maintain websites that keep pace with our digital world.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio section" id="work">
+                <div class="section_header">
+                    <h1 class="tittle">
+                        <span class="normalText">My</span>
+                        <span class="boldText">Work</span>
+                    </h1>
+                    <!-- <p class="subTittle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+                        consequuntur! Voluptas,
+                        minima. Aliquam qui aut omnis tempore quo, incidunt nostrum.</p> -->
+                </div>
+
+                <div class="content">
+                    <!-- Tab -->
+                    <div class="tabs">
+                        <ul>
+                            <li class="tab activeTab" data-filter="all">All</li>
+                            <li class="tab" data-filter="webDesign">Web Design</li>
+                            <li class="tab" data-filter="appDesign">App Design</li>
+                            <li class="tab" data-filter="graphics">Graphic</li>
+                        </ul>
+                    </div>
+
+                    <div class="portfolioCard">
+                        <div class="card portfolio_box" data-item="webDesign" data-aos="zoom-in">
+                            <div class="portfolio_content">
+                                <img src="img/blog6.jpg" alt="">
+
+                                <div class="overlay">
+                                    <h1 class="tittle">Web Design 1 </h1>
+                                    <p class="text">Web Design, Illustration</p>
+                                    <div class="icon">
+                                        <ul>
+                                            <li class="portfolio_detail"><a href="#"><i
+                                                        class="ri-links-line ri"></i></a>
+                                            </li>
+                                            <li class="zoom_in"><a href="#"><i class="ri-zoom-in-line ri"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card portfolio_box" data-item="appDesign" data-aos="zoom-in">
+                            <div class="portfolio_content">
+                                <img src="img/blog2.jpg" alt="">
+                                <div class=" overlay">
+                                    <h1 class="tittle">App Design 1</h1>
+                                    <p class="text">Web Design, Illustration</p>
+                                    <div class="icon">
+                                        <ul>
+                                            <li class="portfolio_detail"><a href="#"><i
+                                                        class="ri-links-line ri"></i></a>
+                                            </li>
+                                            <li class="zoom_in"><a href="#"><i class="ri-zoom-in-line ri"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card portfolio_box" data-item="graphics" data-aos="zoom-in">
+                            <div class="portfolio_content">
+                                <img src="img/blog3.png" alt="">
+                                <div class=" overlay">
+                                    <h1 class="tittle">Graphic Design 1</h1>
+                                    <p class="text">Web Design, Illustration</p>
+                                    <div class="icon">
+                                        <ul>
+                                            <li class="portfolio_detail"><a href="#"><i
+                                                        class="ri-links-line ri"></i></a>
+                                            </li>
+                                            <li class="zoom_in"><a href="#"><i class="ri-zoom-in-line ri"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card portfolio_box" data-item="graphics" data-aos="zoom-in">
+                            <div class="portfolio_content">
+                                <img src="img/blog4.jpg" alt="">
+                                <div class="overlay">
+                                    <h1 class="tittle">Graphic Design 2</h1>
+                                    <p class="text">Web Design, Illustration</p>
+                                    <div class="icon">
+                                        <ul>
+                                            <li class="portfolio_detail"><a href="#"><i
+                                                        class="ri-links-line ri"></i></a>
+                                            </li>
+                                            <li class="zoom_in"><a href="#"><i class="ri-zoom-in-line ri"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card portfolio_box" data-item="webDesign" data-aos="zoom-in">
+                            <div class="portfolio_content">
+                                <img src="img/blog5.webp" alt="">
+                                <div class=" overlay">
+                                    <h1 class="tittle">Web Design 2</h1>
+                                    <p class="text">Web Design, Illustration</p>
+                                    <div class="icon">
+                                        <ul>
+                                            <li class="portfolio_detail"><a href="#"><i
+                                                        class="ri-links-line ri"></i></a>
+                                            </li>
+                                            <li class="zoom_in"><a href="#"><i class="ri-zoom-in-line ri"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card portfolio_box" data-item="appDesign" data-aos="zoom-in">
+                            <div class="portfolio_content">
+                                <img src="img/blog6.jpg" alt="">
+                                <div class=" overlay">
+                                    <h1 class="tittle">App Design 2</h1>
+                                    <p class="text">Web Design, Illustration</p>
+                                    <div class="icon">
+                                        <ul>
+                                            <li class="portfolio_detail"><a href="#"><i
+                                                        class="ri-links-line ri"></i></a>
+                                            </li>
+                                            <li class="zoom_in"><a href="#"><i class="ri-zoom-in-line ri"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonial section" id="client">
+                <div class="section_header">
+                    <h1 class="tittle">
+                        <span class="normalText">Our</span>
+                        <span class="boldText">Testimonial</span>
+                    </h1>
+                    <p class="subTittle">What client say about our work</p>
+                </div>
+
+                <div class="content">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="icon" data-aos="fade-up">
+                                        <img src="img/line_icon2.png" alt="icon">
+                                    </div>
+                                    <figure class="client_profile" data-aos="fade-up">
+                                        <img src="img/pic1.jpg" alt="clientProfile">
+                                    </figure>
+
+                                    <p class="review" data-aos="fade-up">
+                                        " In a professional context it often happens that private or corporate clients
+                                        corder a
+                                        publication to be made and presented with the actual content still not being
+                                        ready.
+                                        "
+                                    </p>
+                                    <h2 class="testimonial_name" data-aos="fade-up">
+                                        Dwaney Jhon,
+                                        <span class="proff">Seo Manager</span>
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="icon">
+                                        <img src="img/line_icon2.png" alt="icon">
+                                    </div>
+                                    <figure class="client_profile">
+                                        <img src="img/pic2.jpg" alt="clientProfile">
+                                    </figure>
+
+                                    <p class="review">
+                                        " In a professional context it often happens that private or corporate clients
+                                        corder a
+                                        publication to be made and presented with the actual content still not being
+                                        ready.
+                                        "
+                                    </p>
+                                    <h2 class="testimonial_name">
+                                        Dwaney Jhon,
+                                        <span class="proff">Seo Manager</span>
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="icon">
+                                        <img src="img/line_icon2.png" alt="icon">
+                                    </div>
+                                    <figure class="client_profile">
+                                        <img src="img/pic1.jpg" alt="clientProfile">
+                                    </figure>
+
+                                    <p class="review">
+                                        " In a professional context it often happens that private or corporate clients
+                                        corder a
+                                        publication to be made and presented with the actual content still not being
+                                        ready.
+                                        "
+                                    </p>
+                                    <h2 class="testimonial_name">
+                                        Dwaney Jhon,
+                                        <span class="proff">Seo Manager</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination" data-aos="fade-up"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe_newsletter section">
+                <div class="section_header">
+                    <h1 class="tittle">
+                        <span class="normalText">Subscribe to</span>
+                        <span class="boldText">Newsletter</span>
+                    </h1>
+                    <p class="subTittle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+                        consequuntur! Voluptas,
+                        minima. Aliquam qui aut omnis tempore quo, incidunt nostrum.</p>
+                </div>
+
+                <div class="content">
+                    <form action="">
+                        <div class="email_field" data-aos="fade-left">
+                            <input class="subscribeEmail" type="text" placeholder="Email">
+                            <button class="subscribeBtn" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="contact_us section" id="contact">
+                <div class="section_header">
+                    <h1 class="tittle">
+                        <span class="normalText">Get in</span>
+                        <span class="boldText">Touch</span>
+                    </h1>
+                    <p class="text">Feel free to contact with us!</p>
+                </div>
+
+                <div class="content">
+                    <div class="contact_info">
+                        <div class="box" data-aos="zoom-in">
+                            <i class="ri-mail-open-fill ri"></i>
+                            <h1 class="mail_us">Mail Us</h1>
+                            <p class="our_mail">email@rsmarquetech.com</p>
+                        </div>
+
+                        <div class="box" data-aos="zoom-in">
+                            <i class="ri-phone-fill ri"></i>
+                            <h1 class="mail_us">Call Us On</h1>
+                            <p class="our_mail">+123 456 7890</p>
+                        </div>
+
+                        <div class="box" data-aos="zoom-in">
+                            <i class="ri-building-2-fill ri"></i>
+                            <h1 class="mail_us">Visit Office</h1>
+                            <p class="our_mail">24 Street, New York, United State.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact_form">
+                        <form action="#" class="contact_us_form">
+                            <div class="input">
+                                <div class="input_field" data-aos="fade-right">
+                                    <input type="text" class="name" placeholder="Name">
+                                </div>
+
+                                <div class="input_field" data-aos="fade-left">
+                                    <input type="text" class="email" placeholder="Email">
+                                </div>
+
+                                <div class="input_field" data-aos="fade-right">
+                                    <input type="text" class="phone" placeholder="Phone">
+                                </div>
+
+                                <div class="input_field" data-aos="fade-left">
+                                    <input type="text" class="subject" placeholder="Subject">
+                                </div>
+
+                                <div class="input_field msg" data-aos="fade-right">
+                                    <input type="text" class="message" placeholder="Your Message...">
+                                </div>
+                            </div>
+
+                            <div class="contact_SubmitBtn">
+                                <button type="submit" data-aos="zoom-in"> Send Message </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <ul class="socialContact" data-aos="fade-up">
+                <li><a href="#"><i class="ri-facebook-fill ri"></i></a></li>
+                <li><a href="#"><i class="ri-linkedin-line ri"></i></a></li>
+                <li><a href="#"><i class="ri-patreon-fill ri"></i></a></li>
+                <li><a href="#"><i class="ri-google-line ri"></i></a></li>
+                <li><a href="#"><i class="ri-twitter-fill ri"></i></a></li>
+            </ul>
+
+            <div class="copyright_info" data-aos="fade-up" data-aos-delay="200">
+                <p class="info">Copyright @ 2021. Designed by <a href="#">@rsmarquetech</a></p>
+            </div>
+        </footer>
+
+        <!-- ====== ======>> Page Scroll-Up Btn <<====== ====== -->
+        <div class="scroll_up" id="scroll-up" data-aos="fade-up">
+            <a href="#home">
+                <i class="ri-arrow-drop-up-line ri"></i>
+            </a>
+        </div>
+    </div>
+</body>
+<!-- ====== ======>> Swiper Js CDN LINK <<====== ====== -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- ====== ======>> Scroll Revel Animation From Github <<====== ====== -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+
+    /*============== Setting Menu Show ==============*/
+    const setting = document.querySelector('#setting'),
+        settinBtn = document.querySelector('#settinBtn')
+
+    settinBtn.addEventListener('click', () => {
+        setting.classList.toggle('settingActive');
+        // settinBtn.classList.toggle("active");
+    });
+
+    // ====== ======>> Dark/Light Theme Version <<====== ======   
+    const body = document.querySelector("body"),
+        changeTheme = document.querySelector("#changeTheme");
+
+    changeTheme.addEventListener("click", () => {
+        body.classList.toggle("activeDarkTheme");
+        // setting.classList.remove('settingActive');
+    });
+
+    /*============== Switch Background to Fixed ==============*/
+    // const switchBg = document.getElementById('#fixedBg'),
+    //     switchBgBtn = document.getElementById('#parallaxBtn');
+
+    // switchBgBtn.addEventListener('click', () => {
+    //     switchBg.classList.toggle('activeSwitchBg'); 
+    // })
+
+    // ====== ======>> Remove Setting Menu On OUTSIDE CLICK <<====== ====== 
+    // const settingMenu = document.getElementById('#setting'),
+    //     settinMenuBtn = document.getElementById('#settinBtn')
+
+    // document.addEventListener('click', (e) => {
+    //     if (e.target.id !== 'settingMenu' && e.target.id !== 'settinMenuBtn') {
+    //         settingMenu.classList.remove('settingActive');
+    //     }
+    // })
+
+
+
+    /*============== TOGGLE MENU SHOW ==============*/
+    const header = document.querySelector('#header'),
+        toggleBtn = document.querySelector('.toggleBtn')
+
+    toggleBtn.addEventListener('click', () => {
+        header.classList.toggle('activeNav');
+        toggleBtn.classList.toggle("active");
+    });
+
+    // ====== ======>> REMOVE NAVMENU ON LINK ACTION <<====== ====== 
+    // const navLink = document.querySelectorAll('.navItem')
+
+    // navLink.forEach(n => n.addEventListener('click', () => {
+    //     const header = document.querySelector('#header')
+    //     header.classList.remove('activeNav')
+    // }))
+
+    // ====== ======>> CHANGE HEADER/NAVBAR BACKGROUND <<====== ======
+    // function scrollHeader() {
+    //     const header = document.getElementById('header')
+    //     // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
+    //     if (this.scrollY >= 100) header.classList.add('scrollHeader');
+    //     else header.classList.remove('scrollHeader')
+    // }
+    // window.addEventListener('scroll', scrollHeader)
+
+    // ====== ======>> Filter Project <<====== ======
+    let tab = document.querySelectorAll('.tab');
+    let card = document.querySelectorAll('.portfolio_box');
+
+    for (let i = 0; i < tab.length; i++) {
+        tab[i].addEventListener('click', function () {
+            for (let j = 0; j < tab.length; j++) {
+                tab[j].classList.remove('activeTab');
+            }
+            this.classList.add('activeTab');
+
+            let dataFilter = this.getAttribute('data-filter');
+            for (k = 0; k < card.length; k++) {
+                card[k].classList.remove('active');
+                card[k].classList.add('hide');
+
+                if (card[k].getAttribute('data-item') == dataFilter || dataFilter == "all") {
+                    card[k].classList.remove('hide');
+                    card[k].classList.add('active');
+                }
+            }
+        })
+    }
+
+    // ====== ======>> Swiper Js <<====== ======
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    });
+
+    // ====== ======>> SHOW SCROLL UP BUTTON <<====== ======  
+    function pageScrollUp() {
+        const scrollUp = document.getElementById('scroll-up')
+        // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
+        if (this.scrollY >= 100) scrollUp.classList.add('show-scroll');
+        else scrollUp.classList.remove('show-scroll')
+    }
+    window.addEventListener('scroll', pageScrollUp);
+
+    // ====== ======>> SCROLL REVEAL ANIMATION <<====== ======   
+    AOS.init
+        (
+            {
+                offset: 120,
+                duration: 1200,
+            }
+        ); 
+</script>
+
+</html>
